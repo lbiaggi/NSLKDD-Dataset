@@ -179,7 +179,7 @@ df_notnorm.to_csv("kdd_test_minmax10.csv", sep=" ")
 kdd_file = open("kdd_test_minmax10.csv", "r")
 kdd_file.readline()
 first_line=1
-with open('kdd_test_minmax10.opf', 'w') as f:
+with open('kdd_test_minmax10_notnorm.opf', 'w') as f:
     if first_line:
         #f.write(f"{classes} {samples} {features-1}\n")
         #opf format header
@@ -197,7 +197,7 @@ df_notnorm.to_csv("kdd_train_minmax10.csv", sep=" ")
 kdd_file = open("kdd_train_minmax10.csv", "r")
 kdd_file.readline()
 first_line=1
-with open('kdd_train_minmax10.opf', 'w') as f:
+with open('kdd_train_minmax10_notnorm.opf', 'w') as f:
     if first_line:
         #f.write(f"{classes} {samples} {features-1}\n")
         #opf format header
